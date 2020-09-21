@@ -12,6 +12,14 @@ export const Title = styled.h1`
   line-height: 56px;
 
   margin-top: 80px;
+
+  @media (max-width: 568px){
+    font-size: 44px;
+    text-align: center;
+    line-height: 46px;
+
+    margin-top: 50px;
+  }
 `;
 
 export const Form = styled.form<FormProps>`
@@ -111,6 +119,36 @@ export const Form = styled.form<FormProps>`
       svg {
         margin-left: auto;
         color: #cbcbd6;
+      }
+    }
+
+    @media (max-width: 568px){
+      margin-top: 60px;
+
+      a {
+        flex-direction: column;
+
+        img {
+          margin-bottom: 20px
+        }
+
+        div {
+          margin: 0px;
+
+          strong {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+          }
+
+          p {
+            text-align: center
+          }
+        }
+
+        svg {
+          display: none;
+        }
       }
     }
   `;
